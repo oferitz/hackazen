@@ -1,0 +1,40 @@
+[app]
+version = "0.0.1"
+port = 9090
+environment = "dev"
+
+[db]
+host = "localhost"
+port = 5432
+user = "user"
+password = "password"
+database = "database"
+ssl_mode = "disable"
+max_open = 25
+max_idle = "300s"
+max_lifetime = "300s"
+
+[session]
+expiration = "24h"
+cookie_name = "cookie_name"
+cookie_domain = "localhost"
+cookie_path = "/"
+cookie_secure = false
+cookie_httponly = true
+cookie_same_site = "lax"
+
+[redis]
+host = "127.0.0.1"
+port = 6379
+username = ""
+password = ""
+url = ""
+database = 0
+reset = false
+
+[smtp]
+host = "smtp.example.com"
+port = 25
+username = "user"
+password = "pwd"
+sender = "Hackazen <no-reply@hackazen.com>"
